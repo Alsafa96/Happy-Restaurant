@@ -1,0 +1,78 @@
+@import 'dishes';
+@import 'contact';
+@import 'about';
+@import 'orders';
+//@import 'order_done';
+
+ul {
+    color: red;
+    position: relative;
+    left: 20px;
+
+    li {
+        //margin-left: 8rem;
+        font-weight: bold;
+        color: red;
+
+        a {
+            color: inherit;
+            text-decoration: none !important;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: none !important;
+                color: inherit;
+                filter: brightness(80%);
+            }
+        }
+
+
+    }
+
+}
+
+.carousel-container {
+    //width: 600px;
+}
+
+header {
+    background-color: floralwhite;
+    margin: 0;
+    padding: 40px 40px 40px 15px;
+}
+
+main {
+    background-color: oldlace;
+    //padding: 40px;
+    //height:100px;
+}
+body{
+    background-color:oldlace !important;
+}
+
+footer {
+    color: whitesmoke;
+    position:fixed !important;
+    bottom:0 !important;
+}
+
+@media screen and (min-width:1024px) {
+    .main-container-card {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .menu_closed {
+        height: 0;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu_open {
+        height: 170px;
+        max-height: 170px;
+        transition: all 0.5s ease-in-out;
+        padding: 10px;
+    }
+}

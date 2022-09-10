@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' />
+    <link rel="stylesheet" href="hand-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='styles.css' />
+    <title>Dishes</title>
+</head>
+
+<body>
+    <header>
+        <nav class='flex justify-between lg:justify-start'>
+            <div class="flex">
+                <i class="fa fa-archway text-black-400 text-4xl"></i>
+                <h1 class='font-extrabold sm:text-2xl ml-3 text-gray-500'>Happy Restaurant</h1>
+            </div>
+            <div class="menu-container block relative">
+                <i class="fa fa-bars sm:hidden ml-24" id='humburger'></i>
+                <ul class='sm:flex xs:bg-yellow-100 xs:rounded-lg xs:mt-0 xs:shadow-md sm:bg-transparent sm:rounded-none sm:p-0 sm:mt-0 sm:shadow-none justify-evenly  sm:visible items-center navbar-items-menu lg:ml-48 menu_closed'
+                    id='menu'>
+                    <li class='xs:ml-1 xs:hidden sm:inline xs:border-b-2 xs:border-yellow-500 sm:border-b-0 sm:ml-0'><a
+                            href="index.html">Home</a></li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="dishes.html">Dishes</a>
+                    </li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="contact.html">Contact us</a>
+                    </li>
+                    <li class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 '><a href="about.html">About</a></li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="/controlPanel">Control Panel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class='pt-5 h-100'>
+        <div
+            class="dishes-menu grid sm:grid-cols-2 xl:grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-1 sm:grid-rows-3 gap-5">
+
+        </div>
+    </main>
+    <footer class='w-100 text-center bg-black'>
+        <span class='text-center'>copyright &copy; by Alsafa Thaar</span>
+    </footer>
+    <script type='text/javascript' src='index.js'></script>
+    <script type='text/javascript' src='loadDishes.js'></script>
+</body>
+
+</html>

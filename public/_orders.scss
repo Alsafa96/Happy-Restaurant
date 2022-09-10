@@ -1,0 +1,47 @@
+body{
+    background-color: oldlace;
+}
+table{
+    table-layout: fixed;
+}
+tr { display: block; }
+th, td { display: block; }
+
+
+#orderNum{
+    width:4%;
+}
+
+#orderName{
+    width:10%;
+}
+
+#customerAddress{
+    width:15%;
+}
+#timeOfRequest{
+    width:7%;
+}
+@media screen and (max-width:1399px){
+    td{
+        margin-left:5rem;
+    }
+}
+
+@media screen and (min-width:629px){
+    #records-filter{
+       margin-right:3px;
+    }
+}
+
+@media screen and (max-width:410px){
+    tr{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width:380px){
+    tr{
+        font-size:12px;
+    }
+}

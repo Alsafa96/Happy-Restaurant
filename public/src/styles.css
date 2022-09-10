@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dish-card {
+    @apply overflow-hidden bg-yellow-100 text-2xl sm:ml-12 sm:w-60 md:w-60 lg:w-60 xl:w-60 2xl:w-60;
+}
+
+.dish-image {
+    @apply rounded-t-lg;
+}
+
+.dish-title {
+    @apply font-bold underline text-gray-500 text-center mt-3;
+}
+
+.dish-description {
+    @apply text-center mt-2 text-lg font-bold;
+}
+
+.dish-price {
+    @apply mt-2 text-2xl font-bold text-center;
+}
+
+.text-shadow{
+    text-shadow:2px 2px 3px grey;
+}

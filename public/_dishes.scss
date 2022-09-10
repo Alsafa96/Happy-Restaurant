@@ -1,0 +1,35 @@
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    //min-height:100vh;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: oldlace;
+}
+
+.dish-order-btn {
+    margin-left: 30%;
+
+    &:hover {
+        filter: brightness(70%);
+    }
+}
+
+.dishes-menu{
+   background-color: oldlace;
+}
+
+.dish-image{
+    max-width:100%;
+    max-height: 230px;
+    min-height: 230px;
+}
+
+@media screen and (min-width:640px) and (max-width:687px) {
+    ul {
+        li {
+            font-size: 12px;
+        }
+    }
+}

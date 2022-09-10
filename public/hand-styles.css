@@ -1,0 +1,174 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: oldlace;
+}
+
+.dish-order-btn {
+  margin-left: 30%;
+}
+
+.dish-order-btn:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.dishes-menu {
+  background-color: oldlace;
+}
+
+.dish-image {
+  max-width: 100%;
+  max-height: 230px;
+  min-height: 230px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 687px) {
+  ul li {
+    font-size: 12px;
+  }
+}
+
+#message {
+  resize: none;
+}
+
+main {
+  background-color: oldlace;
+  height: 100px;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .about-title {
+  letter-spacing: 5px;
+}
+
+body {
+  background-color: oldlace;
+}
+
+table {
+  table-layout: fixed;
+}
+
+tr {
+  display: block;
+}
+
+th, td {
+  display: block;
+}
+
+#orderNum {
+  width: 4%;
+}
+
+#orderName {
+  width: 10%;
+}
+
+#customerAddress {
+  width: 15%;
+}
+
+#timeOfRequest {
+  width: 7%;
+}
+
+@media screen and (max-width: 1399px) {
+  td {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 629px) {
+  #records-filter {
+    margin-right: 3px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  tr {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  tr {
+    font-size: 12px;
+  }
+}
+
+ul {
+  color: red;
+  position: relative;
+  left: 20px;
+}
+
+ul li {
+  font-weight: bold;
+  color: red;
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+ul li a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: inherit;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+header {
+  background-color: floralwhite;
+  margin: 0;
+  padding: 40px 40px 40px 15px;
+}
+
+main {
+  background-color: oldlace;
+}
+
+body {
+  background-color: oldlace !important;
+}
+
+footer {
+  color: whitesmoke;
+  position: fixed !important;
+  bottom: 0 !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container-card {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .menu_closed {
+    height: 0;
+    padding: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu_open {
+    height: 170px;
+    max-height: 170px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=hand-styles.css.map */

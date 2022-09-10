@@ -1,0 +1,36 @@
+{
+  "name": "myrestaurant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.2",
+    "mongoose": "^6.2.6",
+    "morgan": "^1.10.0",
+    "nocache": "^3.0.3",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.12",
+    "open": "^8.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "stylelint-config-recommended": "^5.0.0",
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-pseudo-elements": "^2.0.0"
+  },
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

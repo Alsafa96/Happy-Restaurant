@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' />
+    <link rel="stylesheet" href="hand-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='styles.css' />
+    <title>Control Panel</title>
+</head>
+
+<body>
+    <header>
+        <nav class='flex justify-between lg:justify-start'>
+            <div class="menu-container block relative">
+                <i class="fa fa-bars sm:hidden ml-24" id='humburger'></i>
+                <ul class='sm:flex xs:bg-yellow-100 xs:rounded-lg xs:mt-0 xs:shadow-md sm:bg-transparent sm:rounded-none sm:p-0 sm:mt-0 sm:shadow-none justify-evenly  sm:visible items-center navbar-items-menu lg:ml-48 menu_closed'
+                    id='menu'>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline xs:border-b-2 xs:border-yellow-500 sm:border-b-0 sm:ml-0 text-red-800'>
+                        <a href="todayOrders.html">Today's orders</a>
+                    </li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 w-50 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="menu.html">Dishes Menu</a>
+                    </li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="records.html">Records</a>
+                    </li>
+                    <li
+                        class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'>
+                        <a href="/logout">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class='h-full pt-5'>
+        <table class='mx-10 todayOrders'>
+            <tr class='justify-between hidden'>
+                <th class='underline inline-block mx-10'>No.</th>
+                <th class='underline inline-block mx-20'>Order</th>
+                <th class='underline inline-block mx-10'>Price</th>
+                <th class='underline inline-block mx-10'>Customer name</th>
+                <th class='underline inline-block mx-10'>Phone Number</th>
+                <th class='underline inline-block mx-20'>Address</th>
+                <th class='underline inline-block ml-20'>Time of request</th>
+            </tr>
+        </table>
+    </main>
+    <footer class='bg-black w-100 text-white text-center'>
+        <span>copyright &copy; by Alsafa Thaar</span>
+    </footer>
+    <script src='index.js' type='text/javascript'></script>
+    <script src='loadTodayOrders.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        let stateObj = { 'c': 'B' };
+        history.pushState(stateObj, '', 'admin-login.html');
+    </script>
+</body>
+
+</html>

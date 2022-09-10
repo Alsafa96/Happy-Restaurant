@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' />
+  <link rel="stylesheet" href="hand-styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='styles.css' />
+  <title>Happy Restaurant</title>
+</head>
+
+<body class='relative'>
+  <header>
+    <nav class='flex justify-between lg:justify-start'>
+      <div class="flex">
+        <i class="fa fa-archway text-black-400 text-4xl"></i>
+        <h1 class='font-extrabold sm:text-2xl ml-3 text-gray-500'>Happy Restaurant</h1>
+      </div>
+      <div class="menu-container block relative">
+        <i class="fa fa-bars sm:hidden ml-24" id='humburger'></i>
+        <ul
+          class='sm:flex xs:bg-yellow-100 xs:rounded-lg xs:mt-0 xs:shadow-md sm:bg-transparent sm:rounded-none sm:p-0 sm:mt-0 sm:shadow-none justify-evenly  sm:visible items-center navbar-items-menu lg:ml-48 menu_closed'
+          id='menu'>
+          <li class='xs:ml-1 xs:hidden sm:inline xs:border-b-2 xs:border-yellow-500 sm:border-b-0 sm:ml-0'><a
+              href="index.html">Home</a></li>
+          <li class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'><a
+              href="dishes.html">Dishes</a></li>
+          <li class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'><a
+              href="contact.html">Contact us</a></li>
+          <li class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 '><a href="about.html">About</a></li>
+          <li class='xs:ml-1 xs:hidden sm:inline sm:ml-11 xl:ml-28 xs:border-b-2 xs:border-yellow-500 sm:border-b-0'><a
+              href="/controlPanel">Control Panel</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class='h-100 pt-5'>
+    <div
+      class="main-container-card xs:w-100 sm:w-100 md:w-3/5 lg:w-8/12 xl:w-6/12 2xl:w-6/12 relative mx-auto shadow-xl rounded-b-md">
+      <div class="carousel-container w-100 mb-3 overflow-hidden rounded-t-lg justify-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../src/img/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../src/img/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../src/img/3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev bg-opacity-30 bg-gray-200" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bg-opacity-30 bg-gray-200" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h2 class='font-bold text-blue-800 relative text-center text-2xl'>Welcome to our happy restaurant</h2>
+      <p class='restaurant-intro pt-3 pb-3 pr-8 pl-8 text-red-700 font-extrabold underline'>
+        <!--<h2>Welcome To our happy restaurant</h2>-->
+        Here we have the pleasure to serve you with the most delicious food in the world! <br>
+        We have good dinner rooms and very good service. <br>
+        Our prices are also good.. <br>
+        We look forward to our next customer... <br>
+      </p>
+    </div>
+  </main>
+  <footer class='w-100 text-center bg-black'>
+    <span class='text-center'>copyright &copy; by Alsafa Thaar</span>
+  </footer>
+  <script type='module' src='index.js'></script>
+</body>
+
+</html>
